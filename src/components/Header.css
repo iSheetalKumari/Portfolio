@@ -1,0 +1,25 @@
+.header {
+  background-color: #333;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Increased spacing for better separation */
+  padding: 10px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #00bcd4;
+  text-decoration: underline;
+}

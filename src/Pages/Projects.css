@@ -1,0 +1,66 @@
+/* Projects Page Styling */
+.projects-container {
+  padding: 4rem;
+  background: linear-gradient(135deg, #2b2b4b, #1a1a2e);
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.projects-title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #00bcd4;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.project-card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.project-card p {
+  font-size: 1rem;
+  opacity: 0.9;
+  margin-bottom: 1.5rem;
+}
+
+.project-card a {
+  text-decoration: none;
+  color: #00bcd4;
+  font-weight: bold;
+  border: 1px solid #00bcd4;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.project-card a:hover {
+  background: #00bcd4;
+  color: black;
+}
