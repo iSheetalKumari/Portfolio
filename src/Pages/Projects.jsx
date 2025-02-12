@@ -1,8 +1,21 @@
 // src/pages/Projects.jsx
 import "./Projects.css";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 const Projects = () => {
   const projects = [
+    {
+      title: "ByteEver",
+      description: " is an online code editor that allows users to write, edit, and execute code in real time. It features a sleek, interactive interface powered by Monaco Editor, making it an efficient platform for coding and testing algorithms.",
+      link: "https://github.com/iSheetalKumari/ByteEver",
+      image: ""
+    },
+    {
+      title: "Todo-App",
+      description: "a task management web app using React and Vite, allowing users to add, delete, and mark tasks as completed.",
+      link: "https://github.com/iSheetalKumari/Todo-App",
+      image: ""
+    },
     {
       title: "TextTone",
       description: "A text-to-speech converter using JavaScript.",
@@ -14,6 +27,12 @@ const Projects = () => {
       description: "A feature-rich calculator with advanced functions.",
       link: "https://github.com/iSheetalKumari/CalcPlus",
       image: "/assets/calcplus.png"
+    },
+    {
+      title: "Time-Harmony",
+      description: "simple React-based web app that continuously displays the current date and time. It dynamically updates in real-time, ensuring users always see the correct time.",
+      link: "https://github.com/iSheetalKumari/Time-Harmony.git",
+      image:"" 
     },
     {
       title: "ShopEase",
@@ -33,7 +52,7 @@ const Projects = () => {
             <h2>{project.title}</h2>
             <p>{project.description}</p>
             <a href={project.link} target="_blank" rel="noopener noreferrer">
-              View Project →
+              View Project <FaExternalLinkAlt/>
             </a>
           </div>
         ))}
